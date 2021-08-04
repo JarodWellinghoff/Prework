@@ -1,8 +1,8 @@
-# Pre-work - Tip Calculator
+# Pre-work - *Tip Calculator*
 
-Tip Calculator is a tip calculator application for iOS.
+**Tip Calculator** is a tip calculator application for iOS.
 
-Submitted by: Jarod Wellinghoff
+Submitted by: **Jarod Wellinghoff**
 
 Time spent: **X** hours spent in total
 
@@ -15,10 +15,10 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-- [] UI animations
-* [] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+- [ ] UI animations
+- [ ] Remembering the bill amount across app restarts (if <10mins)
+- [ ] Using locale-specific currency and currency thousands separators.
+- [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
@@ -38,7 +38,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright 2021 Jarod Wellinghoff
+    Copyright [2021] [Jarod Wellinghoff]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
