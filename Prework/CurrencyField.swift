@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class CurrencyField: UITextField {
 	var decimal: Decimal { string.decimal / pow(10, Formatter.currency.maximumFractionDigits) }
 	var maximum: Decimal = 999_999_999.99
@@ -22,8 +22,6 @@ class CurrencyField: UITextField {
 	}
 	
 	override func willMove(toSuperview newSuperview: UIView?) {
-		// you can make it a fixed locale currency if needed
-//		self.locale = Locale(identifier: default_currency) // or "en_US", "fr_FR", etc
 		Formatter.currency.locale = locale
 		addTarget(self, action: #selector(editingChanged), for: .editingChanged)
 		keyboardType = .numberPad
@@ -34,7 +32,6 @@ class CurrencyField: UITextField {
 	
 	override func deleteBackward() {
 		text = string.digits.dropLast().string
-		// manually send the editingChanged event
 		sendActions(for: .editingChanged)
 		
 	}
