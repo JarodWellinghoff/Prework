@@ -8,16 +8,17 @@
 import UIKit
 import Darwin
 
-//@IBDesignable
 class TipViewController: UIViewController {
 	@IBOutlet weak var currencyField:			CurrencyField!
 	@IBOutlet weak var tipAmountLabel: 		UILabel!
 	@IBOutlet weak var totalLabel:			UILabel!
-//	@IBOutlet weak var backgroundGradientView:	GradientView!
 	@IBOutlet weak var backgroundGradientView: 	GradientView!
 	@IBOutlet weak var tipPercentageSlider:		UISlider!
 	@IBOutlet weak var tipPercentageLabel:		UILabel!
 	@IBOutlet weak var partySizePickerView: 	UIPickerView!
+	@IBOutlet weak var tipPercentageTitle: 		UILabel!
+	@IBOutlet weak var tipTitle: 				UILabel!
+	@IBOutlet weak var totalTitle:			UILabel!
 	
 	let defaults = UserDefaults.standard
 	
@@ -25,12 +26,16 @@ class TipViewController: UIViewController {
 		super.viewDidLoad()
 		print("TipView will load")
 		
-		self.title = "Tip Calculator"
+		self.backgroundGradientView.startColor = UIColor.darkGray
+		self.backgroundGradientView.endColor = UIColor.black
+		self.navigationController?.navigationBar.isTranslucent = true
 		
 		
 		tipAmountLabel.adjustsFontSizeToFitWidth = true
 		totalLabel.adjustsFontSizeToFitWidth = true
 		tipPercentageLabel.adjustsFontSizeToFitWidth = true
+		
+
 	
 	}
 	
@@ -38,15 +43,35 @@ class TipViewController: UIViewController {
 		super.viewWillAppear(animated)
 		print("TipView will appear")
 		
-		// Reset values when
-		updateTextStyle(0, 0, 0, 0)
+		tipPercentageTitle.textColor = UIColor.white
+		tipTitle.textColor = UIColor.white
+		totalTitle.textColor = UIColor.white
 		
-	
+		let default_currency = defaults.string(forKey: "currency_locale") ?? "Auto"
+
+		// Currency formatter
+		let currencyFormatter = NumberFormatter()
+		currencyFormatter.usesGroupingSeparator = true
+		currencyFormatter.numberStyle = .currency
+		if default_currency != "Auto" {
+			currencyFormatter.locale = Locale.init(identifier: "eu_EU")
+			currencyField.locale = Locale(identifier: default_currency)
+			
+		} else {
+			currencyFormatter.locale = .current
+			currencyField.locale = Locale.current
+		}
+		
+		updateTextStyle(0, 0, 0, 0, default_currency)
+		
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		print("TipView did appear")
+		// Reset values when
+		
+		currencyField.becomeFirstResponder()
 	
 	}
 	
@@ -77,32 +102,33 @@ class TipViewController: UIViewController {
 		let total = bill_decimal + tip
 		
 		// Send values to change lables
-		updateTextStyle(bill_decimal, tip_percentage, tip, total)
+		updateTextStyle(bill_decimal, tip_percentage, tip, total, defaults.string(forKey: "currency_locale") ?? "Auto")
 		
 	}
 	
-	func updateTextStyle(_ bill: Decimal, _ tip_percentage: Int, _ tip: Decimal, _ total: Decimal) {
+	func updateTextStyle( _ bill: Decimal,_ tip_percentage: Int, _ tip: Decimal, _ total: Decimal, _ default_currency: String) {
 		// Get currency symbol
 		let default_currency = defaults.string(forKey: "currency_locale") ?? "Auto"
-		
-		// Currency formatter
-		let currencyFormatter = NumberFormatter()
-		currencyFormatter.usesGroupingSeparator = true
-		currencyFormatter.numberStyle = .currency
-		if default_currency != "Auto" {
-			currencyFormatter.locale = Locale(identifier: default_currency)
-			
-		} else {
-			currencyFormatter.locale = .current
-		}
-		
+
 		// Update bill amount text
 		if bill == 0 {
 			currencyField.textColor = UIColor.gray
 			currencyField.text = "Bill Amount"
 			currencyField.textAlignment = NSTextAlignment.center
 		} else {
-			currencyField.textColor = UIColor.black
+			
+			currencyField.textColor = UIColor.white
+		}
+		
+		// Currency formatter
+		let currencyFormatter = NumberFormatter()
+		currencyFormatter.usesGroupingSeparator = true
+		currencyFormatter.numberStyle = .currency
+		if default_currency != "Auto" {
+			currencyFormatter.locale = Locale.init(identifier: default_currency)
+			
+		} else {
+			currencyFormatter.locale = .current
 		}
 		
 		// Update Tip Amount Label
@@ -110,7 +136,7 @@ class TipViewController: UIViewController {
 		if tip == 0.00 {
 			tipAmountLabel.textColor = UIColor.gray
 		} else {
-			tipAmountLabel.textColor = UIColor.black
+			tipAmountLabel.textColor = UIColor.white
 		}
 		
 		// Update Total Amount
@@ -118,7 +144,7 @@ class TipViewController: UIViewController {
 		if total == 0.00 {
 			totalLabel.textColor = UIColor.gray
 		} else {
-			totalLabel.textColor = UIColor.black
+			totalLabel.textColor = UIColor.white
 		}
 
 		// Update Tip Percentage
@@ -126,24 +152,12 @@ class TipViewController: UIViewController {
 		if tip_percentage == 0 {
 			tipPercentageLabel.textColor = UIColor.gray
 		} else {
-			tipPercentageLabel.textColor = UIColor.black
+			tipPercentageLabel.textColor = UIColor.white
 		}
 		
 	}
 	
-	func gradientBackground(_ top_color: CGColor, _ bottom_color: CGColor) {
-		// Create a gradient layer.
-		let gradientLayer = CAGradientLayer()
-		// Set the size of the layer to be equal to size of the display.
-		gradientLayer.frame = self.view.bounds
-		// Set an array of Core Graphics colors (.cgColor) to create the gradient.
-		gradientLayer.colors = [top_color, bottom_color]
-		// Rasterize this static layer to improve app performance.
-		gradientLayer.shouldRasterize = true
-		// Apply the gradient to the backgroundGradientView.
-		self.view.layer.insertSublayer(gradientLayer, at: 0)
-		
-		view.sendSubviewToBack(backgroundGradientView)
+	func updateCurrency() {
 		
 	}
 	

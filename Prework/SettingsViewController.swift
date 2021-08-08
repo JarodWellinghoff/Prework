@@ -7,11 +7,11 @@
 
 import UIKit
 
-//@IBDesignable
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 	@IBOutlet weak var currencyPickerTextField: UITextField!
 	@IBOutlet weak var currencyPickerView: UIPickerView!
 	@IBOutlet weak var pickerToolbar: UIToolbar!
+	@IBOutlet weak var backgroundGradientView: GradientView!
 	@IBOutlet weak var pickerBarButton: UIBarButtonItem!
 	
 	var currencyPickerData: [String] = [String]()
@@ -22,6 +22,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		print("SettingsView will load")
+		
+		self.backgroundGradientView.startColor = UIColor.darkGray
+		self.backgroundGradientView.endColor = UIColor.black
 		
 		self.currencyPickerTextField.delegate = self
 		self.currencyPickerView.delegate = self

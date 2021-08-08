@@ -7,7 +7,6 @@
 
 import UIKit
 
-//@IBDesignable
 class CurrencyField: UITextField {
 	var decimal: Decimal { string.decimal / pow(10, Formatter.currency.maximumFractionDigits) }
 	var maximum: Decimal = 999_999_999.99
