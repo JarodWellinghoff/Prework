@@ -56,6 +56,7 @@ extension CurrencyField {
 extension UITextField {
 	var string: String { text ?? "" }
 	
+	
 }
 
 extension NumberFormatter {
