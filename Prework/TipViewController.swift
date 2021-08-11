@@ -47,9 +47,6 @@ class TipViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
 		partySizePickerView.delegate = self
 		partySizePickerView.dataSource = self
 		
-		self.backgroundGradientView.startColor = UIColor.darkGray
-		self.backgroundGradientView.endColor = UIColor.black
-		
 		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
 		self.navigationController?.navigationBar.shadowImage = UIImage()
 		self.navigationController?.navigationBar.isTranslucent = true
@@ -59,9 +56,46 @@ class TipViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
 		totalLabel.adjustsFontSizeToFitWidth = true
 		tipPercentageLabel.adjustsFontSizeToFitWidth = true
 		
-		let min_num = 1
-		let min_max = 100
-		pickerData = Array(stride(from: min_num, to: min_max + 1, by: 1))
+		var last_total = 0.0
+		if UserDefaults.contains("last_total") {
+			last_total = defaults.double(forKey: "last_total")
+		}
+		defaults.set(last_total, forKey: "last_total")
+		
+		var default_dark_mode = true
+		if UserDefaults.contains("dark_mode") {
+			default_dark_mode = defaults.bool(forKey: "dark_mode")
+		}
+		defaults.set(default_dark_mode, forKey: "dark_mode")
+		
+		let default_currency = defaults.string(forKey: "currency_locale") ?? "Auto"
+		defaults.set(default_currency, forKey: "currency_locale")
+		
+		var default_max_tip = 100
+		if UserDefaults.contains("max_tip") {
+			default_max_tip = defaults.integer(forKey: "max_tip")
+		}
+		defaults.set(default_max_tip, forKey: "max_tip")
+		
+		var default_tip = 10
+		if UserDefaults.contains("tip") {
+			default_tip = defaults.integer(forKey: "tip")
+		}
+		defaults.set(default_tip, forKey: "tip")
+		
+		var default_max_party_size = 30
+		if UserDefaults.contains("max_party_size") {
+			default_max_party_size = defaults.integer(forKey: "max_party_size")
+		}
+		defaults.set(default_max_party_size, forKey: "max_party_size")
+		
+		var default_party_size = 1
+		if UserDefaults.contains("party_size") {
+			default_party_size = defaults.integer(forKey: "party_size")
+		}
+		defaults.set(default_party_size, forKey: "party_size")
+		
+		pickerData = Array(stride(from: 1, to: default_party_size + 1, by: 1))
 		
 	}
 	
@@ -69,15 +103,42 @@ class TipViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
 		super.viewWillAppear(animated)
 		print("TipView will appear")
 		
-		tipPercentageTitle.textColor = UIColor.white
-		tipTitle.textColor = UIColor.white
-		totalTitle.textColor = UIColor.white
-		partySizeLabel.textColor = UIColor.white
-		perPersonLabel.textColor = UIColor.white
-		pricePerPersonLabel.textColor = UIColor.white
-		roundingLabel.textColor = UIColor.lightGray
-		
+		let dark_mode = defaults.bool(forKey: "dark_mode")
 		let default_currency = defaults.string(forKey: "currency_locale") ?? "Auto"
+		let max_tip = defaults.integer(forKey: "max_tip")
+		let default_tip = defaults.integer(forKey: "tip")
+		let max_party_size = defaults.integer(forKey: "max_party_size")
+		let default_party_size = defaults.integer(forKey: "party_size")
+		let last_total = defaults.double(forKey: "last_total")
+		
+		let default_tip_p = Float(default_tip) / 100.0
+		let max_tip_p = Float(max_tip) / 100.0
+		
+		if dark_mode {
+			self.backgroundGradientView.startColor = UIColor.darkGray
+			self.backgroundGradientView.endColor = UIColor.black
+			
+			tipPercentageTitle.textColor = UIColor.white
+			tipTitle.textColor = UIColor.white
+			totalTitle.textColor = UIColor.white
+			partySizeLabel.textColor = UIColor.white
+			perPersonLabel.textColor = UIColor.white
+			pricePerPersonLabel.textColor = UIColor.white
+			roundingLabel.textColor = UIColor.lightGray
+		} else {
+			
+			self.backgroundGradientView.startColor = UIColor.white
+			self.backgroundGradientView.endColor = UIColor.green
+			
+			tipPercentageTitle.textColor = UIColor.black
+			tipTitle.textColor = UIColor.black
+			totalTitle.textColor = UIColor.black
+			partySizeLabel.textColor = UIColor.black
+			perPersonLabel.textColor = UIColor.black
+			pricePerPersonLabel.textColor = UIColor.black
+			roundingLabel.textColor = UIColor.darkGray
+		}
+		
 		
 		// Currency formatter
 		let currencyFormatter = NumberFormatter()
@@ -92,7 +153,13 @@ class TipViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
 			currencyField.locale = Locale.current
 		}
 		
-		updateTextStyle(0, 0, 0, 0, 0, 0, default_currency)
+		tipPercentageSlider.value = default_tip_p
+		tipPercentageSlider.maximumValue = max_tip_p
+		
+		pickerData = Array(stride(from: 1, to: max_party_size + 1, by: 1))
+		partySizePickerView.selectRow(default_party_size - 1, inComponent: 0, animated: true)
+		updateTextStyle(Decimal(last_total), Decimal(default_tip) / 100, 0, 0, 0, 0, default_currency)
+		calculateTip(partySizePickerView!)
 		
 	}
 	
@@ -146,6 +213,7 @@ class TipViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
 		// Get bill amount from text field input
 		let bill_decimal = currencyField.decimal
 		let bill_isWhole = bill_decimal.isWholeCurrency
+		defaults.setValue(bill_decimal, forKey: "last_total")
 		
 		
 		// Get tip percentage from slider
@@ -220,10 +288,10 @@ class TipViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
 		else { totalLabel.textColor = UIColor.white }
 		
 		// Update Tip Percentage
+		if tip_percentage == 0.0 { tipPercentageLabel.textColor = UIColor.gray }
+		else { tipPercentageLabel.textColor = UIColor.white }
 		tipPercentageLabel.text = String("\(tip_percentage * 100)%")
 		
-		if tip_percentage == 0 { tipPercentageLabel.textColor = UIColor.gray }
-		else { tipPercentageLabel.textColor = UIColor.white }
 		
 		// Update Price Per Person Label
 		pricePerPersonLabel.text = currencyFormatter.string(for: price_per_person)
