@@ -10,6 +10,6 @@ struct Currency: Codable {
 	let localID: String
 	let code: String
 	let symbol: String
-	let isWhole: Bool
+	let isWhole: String
 	
 }

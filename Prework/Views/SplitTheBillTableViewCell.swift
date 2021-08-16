@@ -12,6 +12,8 @@ class SplitTheBillTableViewCell: UITableViewCell {
 	@IBOutlet weak var partySizeCurrencyLabel: CurrencyLabel!
 	@IBOutlet weak var partySizeImageView: UIImageView!
 	
+	let defaults = UserDefaults.standard
+	
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

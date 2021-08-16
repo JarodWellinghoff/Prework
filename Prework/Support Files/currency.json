@@ -4,1070 +4,902 @@
 		"localID" : "hr_BA",
 		"code" : "BAM",
 		"symbol" : "KM",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Central African CFA Franc",
 		"localID" : "en_CM",
 		"code" : "XAF",
 		"symbol" : "FCFA",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Burundian Franc",
 		"localID" : "en_BI",
 		"code" : "BIF",
 		"symbol" : "FBu",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "United Arab Emirates Dirham",
 		"localID" : "en_AE",
 		"code" : "AED",
 		"symbol" : "AED",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Rwandan Franc",
 		"localID" : "rw_RW",
 		"code" : "RWF",
 		"symbol" : "RF",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Swazi Lilangeni",
 		"localID" : "en_SZ",
 		"code" : "SZL",
 		"symbol" : "E",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Israeli New Shekel",
 		"localID" : "he_IL",
 		"code" : "ILS",
 		"symbol" : "₪",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "New Zealand Dollar",
 		"localID" : "en_PN",
 		"code" : "NZD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Australian Dollar",
 		"localID" : "en_NF",
 		"code" : "AUD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Cayman Islands Dollar",
 		"localID" : "es_KY",
 		"code" : "KYD",
 		"symbol" : "KYD",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Tanzanian Shilling",
 		"localID" : "rwk_TZ",
 		"code" : "TZS",
 		"symbol" : "TSh",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "New Taiwan Dollar",
 		"localID" : "zh_Hant_TW",
 		"code" : "TWD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Chinese Yuan",
 		"localID" : "en_CN",
 		"code" : "CNY",
 		"symbol" : "¥",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Swiss Franc",
 		"localID" : "gsw_LI",
 		"code" : "CHF",
 		"symbol" : "CHF",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Indian Rupee",
 		"localID" : "ta_IN",
 		"code" : "INR",
 		"symbol" : "₹",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Thai Baht",
 		"localID" : "th_TH",
 		"code" : "THB",
 		"symbol" : "฿",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Euro",
 		"localID" : "es_EA",
 		"code" : "EUR",
 		"symbol" : "€",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Turkish Lira",
 		"localID" : "tr_TR",
 		"code" : "TRY",
 		"symbol" : "₺",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "West African CFA Franc",
 		"localID" : "ee_TG",
 		"code" : "XOF",
 		"symbol" : "CFA",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Nigerian Naira",
 		"localID" : "en_NG",
 		"code" : "NGN",
 		"symbol" : "₦",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Seychellois Rupee",
 		"localID" : "fr_SC",
 		"code" : "SCR",
 		"symbol" : "SR",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Honduran Lempira",
 		"localID" : "es_HN",
 		"code" : "HNL",
 		"symbol" : "L",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Colombian Peso",
 		"localID" : "en_CO",
 		"code" : "COP",
 		"symbol" : "$",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "East Caribbean Dollar",
 		"localID" : "en_AG",
 		"code" : "XCD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Kazakhstani Tenge",
 		"localID" : "ru_KZ",
 		"code" : "KZT",
 		"symbol" : "₸",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Ethiopian Birr",
 		"localID" : "so_ET",
 		"code" : "ETB",
 		"symbol" : "Br",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Macanese Pataca",
 		"localID" : "zh_Hant_MO",
 		"code" : "MOP",
 		"symbol" : "MOP$",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "South Sudanese Pound",
-		"localID" : "nus_SS",
-		"code" : "SSP",
-		"symbol" : "£",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Cambodian Riel",
 		"localID" : "km_KH",
 		"code" : "KHR",
 		"symbol" : "៛",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Myanmar Kyat",
-		"localID" : "my_MM",
-		"code" : "MMK",
-		"symbol" : "K",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Mozambican Metical",
 		"localID" : "mgh_MZ",
 		"code" : "MZN",
 		"symbol" : "MTn",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Ghanaian Cedi",
 		"localID" : "ee_GH",
 		"code" : "GHS",
 		"symbol" : "GH₵",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "US Dollar",
-		"localID" : "es_EC",
+		"localID" : "en_US",
 		"code" : "USD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "British Pound",
 		"localID" : "kw_GB",
 		"code" : "GBP",
 		"symbol" : "£",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Macedonian Denar",
 		"localID" : "mk_MK",
 		"code" : "MKD",
 		"symbol" : "ден.",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Mauritanian Ouguiya",
-		"localID" : "ar_MR",
-		"code" : "MRU",
-		"symbol" : "أ.م.",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Bermudan Dollar",
 		"localID" : "en_BM",
 		"code" : "BMD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Brunei Dollar",
 		"localID" : "en_BN",
 		"code" : "BND",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Eritrean Nakfa",
 		"localID" : "byn_ER",
 		"code" : "ERN",
 		"symbol" : "Nfk",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Malagasy Ariary",
 		"localID" : "en_MG",
 		"code" : "MGA",
 		"symbol" : "Ar",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Canadian Dollar",
 		"localID" : "iu_CA",
 		"code" : "CAD",
 		"symbol" : "CA$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Singapore Dollar",
 		"localID" : "ta_SG",
 		"code" : "SGD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "South African Rand",
 		"localID" : "tn_ZA",
 		"code" : "ZAR",
 		"symbol" : "R",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Philippine Piso",
 		"localID" : "ceb_PH",
 		"code" : "PHP",
 		"symbol" : "₱",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Pakistani Rupee",
-		"localID" : "ps_PK",
-		"code" : "PKR",
-		"symbol" : "Rs",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Liberian Dollar",
 		"localID" : "vai_Latn_LR",
 		"code" : "LRD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Tongan Paʻanga",
 		"localID" : "to_TO",
 		"code" : "TOP",
 		"symbol" : "T$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Ugandan Shilling",
 		"localID" : "cgg_UG",
 		"code" : "UGX",
 		"symbol" : "USh",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Moroccan Dirham",
 		"localID" : "shi_Latn_MA",
 		"code" : "MAD",
 		"symbol" : "MAD",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Comorian Franc",
-		"localID" : "ar_KM",
-		"code" : "KMF",
-		"symbol" : "CF",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Albanian Lek",
 		"localID" : "en_AL",
 		"code" : "ALL",
 		"symbol" : "ALL",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Vanuatu Vatu",
 		"localID" : "fr_VU",
 		"code" : "VUV",
 		"symbol" : "VT",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Congolese Franc",
 		"localID" : "sw_CD",
 		"code" : "CDF",
 		"symbol" : "FC",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Haitian Gourde",
 		"localID" : "es_HT",
 		"code" : "HTG",
 		"symbol" : "HTG",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Guinean Franc",
 		"localID" : "nqo_GN",
 		"code" : "GNF",
 		"symbol" : "GNF",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Kenyan Shilling",
 		"localID" : "guz_KE",
 		"code" : "KES",
 		"symbol" : "Ksh",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Danish Krone",
 		"localID" : "kl_GL",
 		"code" : "DKK",
 		"symbol" : "kr.",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Tunisian Dinar",
 		"localID" : "fr_TN",
 		"code" : "TND",
 		"symbol" : "DT",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Panamanian Balboa",
 		"localID" : "es_PA",
 		"code" : "PAB",
 		"symbol" : "B/.",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Polish Zloty",
 		"localID" : "pl_PL",
 		"code" : "PLN",
 		"symbol" : "zł",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Brazilian Real",
 		"localID" : "en_BR",
 		"code" : "BRL",
 		"symbol" : "R$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Norwegian Krone",
 		"localID" : "en_NO",
 		"code" : "NOK",
 		"symbol" : "NOK",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Serbian Dinar",
 		"localID" : "sr_Latn_RS",
 		"code" : "RSD",
 		"symbol" : "RSD",
-		"isWhole" : true
-	},
-	{
-		"identifier" : "Afghan Afghani",
-		"localID" : "ps_AF",
-		"code" : "AFN",
-		"symbol" : "؋",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Bolivian Boliviano",
 		"localID" : "qu_BO",
 		"code" : "BOB",
 		"symbol" : "Bs",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Bahamian Dollar",
-		"localID" : "en_BS",
-		"code" : "BSD",
-		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Zambian Kwacha",
 		"localID" : "en_ZM",
 		"code" : "ZMW",
 		"symbol" : "K",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Trinidad & Tobago Dollar",
 		"localID" : "es_TT",
 		"code" : "TTD",
 		"symbol" : "TTD",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Guatemalan Quetzal",
 		"localID" : "es_GT",
 		"code" : "GTQ",
 		"symbol" : "Q",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Hong Kong Dollar",
 		"localID" : "zh_Hant_HK",
 		"code" : "HKD",
 		"symbol" : "HK$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Uruguayan Peso",
 		"localID" : "es_UY",
 		"code" : "UYU",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Peruvian Sol",
 		"localID" : "es_PE",
 		"code" : "PEN",
 		"symbol" : "S/",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Bhutanese Ngultrum",
-		"localID" : "dz_BT",
-		"code" : "BTN",
-		"symbol" : "Nu.",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Czech Koruna",
 		"localID" : "en_CZ",
 		"code" : "CZK",
 		"symbol" : "CZK",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Argentine Peso",
 		"localID" : "en_AR",
 		"code" : "ARS",
 		"symbol" : "$",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Jordanian Dinar",
-		"localID" : "ar_JO",
-		"code" : "JOD",
-		"symbol" : "د.أ.‏",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Botswanan Pula",
 		"localID" : "en_BW",
 		"code" : "BWP",
 		"symbol" : "P",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Barbadian Dollar",
 		"localID" : "es_BB",
 		"code" : "BBD",
 		"symbol" : "BBD",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Gambian Dalasi",
 		"localID" : "ff_Latn_GM",
 		"code" : "GMD",
 		"symbol" : "GMD",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Armenian Dram",
 		"localID" : "hy_AM",
 		"code" : "AMD",
 		"symbol" : "֏",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Saudi Riyal",
-		"localID" : "ar_SA",
-		"code" : "SAR",
-		"symbol" : "ر.س.‏",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Libyan Dinar",
 		"localID" : "ar_LY",
 		"code" : "LYD",
 		"symbol" : "د.ل.‏",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Namibian Dollar",
 		"localID" : "af_NA",
 		"code" : "NAD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Russian Ruble",
 		"localID" : "ba_RU",
 		"code" : "RUB",
 		"symbol" : "RUB",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Maldivian Rufiyaa",
 		"localID" : "dv_MV",
 		"code" : "MVR",
 		"symbol" : "ރ.",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Iranian Rial",
-		"localID" : "fa_IR",
-		"code" : "IRR",
-		"symbol" : "ریال",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Uzbekistani Som",
 		"localID" : "uz_Latn_UZ",
 		"code" : "UZS",
 		"symbol" : "soʻm",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Indonesian Rupiah",
 		"localID" : "jv_ID",
 		"code" : "IDR",
 		"symbol" : "Rp",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "CFP Franc",
 		"localID" : "fr_PF",
 		"code" : "XPF",
 		"symbol" : "FCFP",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Guyanaese Dollar",
 		"localID" : "es_GY",
 		"code" : "GYD",
 		"symbol" : "GYD",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Belize Dollar",
 		"localID" : "en_BZ",
 		"code" : "BZD",
 		"symbol" : "$",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Kuwaiti Dinar",
-		"localID" : "ar_KW",
-		"code" : "KWD",
-		"symbol" : "د.ك.‏",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Sierra Leonean Leone",
 		"localID" : "ff_Latn_SL",
 		"code" : "SLL",
 		"symbol" : "SLL",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Djiboutian Franc",
 		"localID" : "fr_DJ",
 		"code" : "DJF",
 		"symbol" : "Fdj",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "São Tomé & Príncipe Dobra",
 		"localID" : "pt_ST",
 		"code" : "STN",
 		"symbol" : "Db",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Sudanese Pound",
-		"localID" : "ar_SD",
-		"code" : "SDG",
-		"symbol" : "ج.س.",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Iraqi Dinar",
-		"localID" : "ckb_IQ",
-		"code" : "IQD",
-		"symbol" : "د.ع.‏",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Georgian Lari",
 		"localID" : "os_GE",
 		"code" : "GEL",
 		"symbol" : "₾",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Surinamese Dollar",
 		"localID" : "nl_SR",
 		"code" : "SRD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Dominican Peso",
 		"localID" : "es_DO",
 		"code" : "DOP",
 		"symbol" : "RD$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Ukrainian Hryvnia",
 		"localID" : "en_UA",
 		"code" : "UAH",
 		"symbol" : "UAH",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Mauritian Rupee",
 		"localID" : "en_MU",
 		"code" : "MUR",
 		"symbol" : "Rs",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Chilean Peso",
 		"localID" : "es_CL",
 		"code" : "CLP",
 		"symbol" : "$",
-		"isWhole" : true
-	},
-	{
-		"identifier" : "Cape Verdean Escudo",
-		"localID" : "kea_CV",
-		"code" : "CVE",
-		"symbol" : "​",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Kyrgystani Som",
 		"localID" : "ky_KG",
 		"code" : "KGS",
 		"symbol" : "сом",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Malawian Kwacha",
 		"localID" : "en_MW",
 		"code" : "MWK",
 		"symbol" : "MK",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Icelandic Króna",
 		"localID" : "is_IS",
 		"code" : "ISK",
 		"symbol" : "ISK",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Mexican Peso",
 		"localID" : "en_MX",
 		"code" : "MXN",
 		"symbol" : "$",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Qatari Rial",
-		"localID" : "ar_QA",
-		"code" : "QAR",
-		"symbol" : "ر.ق.‏",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Azerbaijani Manat",
 		"localID" : "az_Latn_AZ",
 		"code" : "AZN",
 		"symbol" : "₼",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Malaysian Ringgit",
 		"localID" : "en_MY",
 		"code" : "MYR",
 		"symbol" : "RM",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Syrian Pound",
 		"localID" : "fr_SY",
 		"code" : "SYP",
 		"symbol" : "LS",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Jamaican Dollar",
 		"localID" : "en_JM",
 		"code" : "JMD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Moldovan Leu",
 		"localID" : "ru_MD",
 		"code" : "MDL",
 		"symbol" : "L",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "South Korean Won",
 		"localID" : "en_KR",
 		"code" : "KRW",
 		"symbol" : "₩",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Nicaraguan Córdoba",
 		"localID" : "es_NI",
 		"code" : "NIO",
 		"symbol" : "C$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Netherlands Antillean Guilder",
 		"localID" : "nl_SX",
 		"code" : "ANG",
 		"symbol" : "NAf.",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Egyptian Pound",
-		"localID" : "ar_EG",
-		"code" : "EGP",
-		"symbol" : "ج.م.‏",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Costa Rican Colón",
 		"localID" : "es_CR",
 		"code" : "CRC",
 		"symbol" : "₡",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Japanese Yen",
 		"localID" : "en_JP",
 		"code" : "JPY",
 		"symbol" : "¥",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Solomon Islands Dollar",
 		"localID" : "en_SB",
 		"code" : "SBD",
 		"symbol" : "$",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Somali Shilling",
-		"localID" : "ar_SO",
-		"code" : "SOS",
-		"symbol" : "S",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Samoan Tala",
 		"localID" : "en_WS",
 		"code" : "WST",
 		"symbol" : "WS$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Cuban Peso",
 		"localID" : "es_CU",
 		"code" : "CUP",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Angolan Kwanza",
 		"localID" : "ln_AO",
 		"code" : "AOA",
 		"symbol" : "Kz",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Romanian Leu",
 		"localID" : "ro_RO",
 		"code" : "RON",
 		"symbol" : "RON",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Swedish Krona",
 		"localID" : "en_SE",
 		"code" : "SEK",
 		"symbol" : "kr",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Gibraltar Pound",
 		"localID" : "en_GI",
 		"code" : "GIP",
 		"symbol" : "£",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Paraguayan Guarani",
 		"localID" : "es_PY",
 		"code" : "PYG",
 		"symbol" : "Gs.",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Algerian Dinar",
 		"localID" : "fr_DZ",
 		"code" : "DZD",
 		"symbol" : "DA",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Sri Lankan Rupee",
 		"localID" : "si_LK",
 		"code" : "LKR",
 		"symbol" : "රු.",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "St. Helena Pound",
 		"localID" : "en_SH",
 		"code" : "SHP",
 		"symbol" : "£",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Fijian Dollar",
 		"localID" : "en_FJ",
 		"code" : "FJD",
 		"symbol" : "$",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Belarusian Ruble",
 		"localID" : "ru_BY",
 		"code" : "BYN",
 		"symbol" : "Br",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Falkland Islands Pound",
 		"localID" : "en_FK",
 		"code" : "FKP",
 		"symbol" : "£",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Bahraini Dinar",
-		"localID" : "ar_BH",
-		"code" : "BHD",
-		"symbol" : "د.ب.‏",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Laotian Kip",
 		"localID" : "lo_LA",
 		"code" : "LAK",
 		"symbol" : "₭",
-		"isWhole" : true
-	},
-	{
-		"identifier" : "Nepalese Rupee",
-		"localID" : "ne_NP",
-		"code" : "NPR",
-		"symbol" : "नेरू",
-		"isWhole" : false
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Hungarian Forint",
 		"localID" : "hu_HU",
 		"code" : "HUF",
 		"symbol" : "Ft",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "North Korean Won",
 		"localID" : "ko_KP",
 		"code" : "KPW",
 		"symbol" : "KPW",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Venezuelan Bolívar",
 		"localID" : "es_VE",
 		"code" : "VES",
 		"symbol" : "Bs.S",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Tajikistani Somoni",
 		"localID" : "tg_TJ",
 		"code" : "TJS",
 		"symbol" : "сом.",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Bangladeshi Taka",
-		"localID" : "ccp_BD",
-		"code" : "BDT",
-		"symbol" : "৳",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Omani Rial",
-		"localID" : "ar_OM",
-		"code" : "OMR",
-		"symbol" : "ر.ع.‏",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Lebanese Pound",
-		"localID" : "ar_LB",
-		"code" : "LBP",
-		"symbol" : "ل.ل.‏",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Croatian Kuna",
 		"localID" : "hr_HR",
 		"code" : "HRK",
 		"symbol" : "HRK",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Aruban Florin",
 		"localID" : "nl_AW",
 		"code" : "AWG",
 		"symbol" : "Afl.",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Papua New Guinean Kina",
 		"localID" : "en_PG",
 		"code" : "PGK",
 		"symbol" : "K",
-		"isWhole" : false
-	},
-	{
-		"identifier" : "Yemeni Rial",
-		"localID" : "ar_YE",
-		"code" : "YER",
-		"symbol" : "ر.ي.‏",
-		"isWhole" : true
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Vietnamese Dong",
 		"localID" : "vi_VN",
 		"code" : "VND",
 		"symbol" : "₫",
-		"isWhole" : true
+		"isWhole" : "true"
 	},
 	{
 		"identifier" : "Turkmenistani Manat",
 		"localID" : "tk_TM",
 		"code" : "TMT",
 		"symbol" : "TMT",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Bulgarian Lev",
 		"localID" : "en_BG",
 		"code" : "BGN",
 		"symbol" : "BGN",
-		"isWhole" : false
+		"isWhole" : "false"
 	},
 	{
 		"identifier" : "Mongolian Tugrik",
 		"localID" : "mn_MN",
 		"code" : "MNT",
 		"symbol" : "₮",
-		"isWhole" : false
+		"isWhole" : "false"
 	}
 ]
