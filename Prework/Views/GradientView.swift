@@ -10,26 +10,20 @@ import UIKit
 //@IBDesignable
 class GradientView: UIView {
 	@IBInspectable var startColor: UIColor? {
-		didSet {
-			updateGradient()
-			
-		}
+		didSet { updateGradient() }
 		
 	}
+	
 	@IBInspectable var endColor: UIColor? {
-		didSet {
-			updateGradient()
-			
-		}
+		didSet { updateGradient() }
 		
 	}
+	
 	@IBInspectable var angle: CGFloat = 270 {
-		didSet {
-			updateGradient()
-			
-		}
+		didSet { updateGradient() }
 		
 	}
+	
 	private var gradient: CAGradientLayer?
 	
 	required init?(coder aDecoder: NSCoder) {
@@ -37,10 +31,12 @@ class GradientView: UIView {
 		installGradient()
 		
 	}
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		installGradient()
 	}
+	
 	private func installGradient() {
 		if let gradient = self.gradient {
 			gradient.removeFromSuperlayer()
@@ -52,6 +48,7 @@ class GradientView: UIView {
 		self.gradient = gradient
 		
 	}
+	
 	private func updateGradient() {
 		if let gradient = self.gradient {
 			let startColor = self.startColor ?? UIColor.clear
@@ -64,12 +61,14 @@ class GradientView: UIView {
 		}
 		
 	}
+	
 	private func createGradient() -> CAGradientLayer {
 		let gradient = CAGradientLayer()
 		gradient.frame = self.bounds
 		return gradient
 		
 	}
+	
 	private func gradientPointsForAngle(_ angle: CGFloat) -> (CGPoint, CGPoint) {
 		let end = pointForAngle(angle)
 		let start = oppositePoint(end)
@@ -78,6 +77,7 @@ class GradientView: UIView {
 		return (p0, p1)
 		
 	}
+	
 	private func pointForAngle(_ angle: CGFloat) -> CGPoint {
 		let radians = angle * .pi / 180.0
 		var x = cos(radians)
@@ -94,19 +94,24 @@ class GradientView: UIView {
 		return CGPoint(x: x, y: y)
 		
 	}
+	
 	private func transformToGradientSpace(_ point: CGPoint) -> CGPoint {
 		return CGPoint(x: (point.x + 1) * 0.5, y: 1.0 - (point.y + 1) * 0.5)
 		
 	}
+	
 	private func oppositePoint(_ point: CGPoint) -> CGPoint {
 		return CGPoint(x: -point.x, y: -point.y)
 		
 	}
+	
 	override func prepareForInterfaceBuilder() {
 		super.prepareForInterfaceBuilder()
 		installGradient()
 		updateGradient()
+		
 	}
+	
 	override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
 		super.traitCollectionDidChange(previousTraitCollection)
 		
@@ -114,6 +119,9 @@ class GradientView: UIView {
 		   let hasUserInterfaceStyleChanged = previousTraitCollection?.hasDifferentColorAppearance(comparedTo: traitCollection),
 		   hasUserInterfaceStyleChanged {
 			updateGradient()
+			
 		}
+		
 	}
+	
 }

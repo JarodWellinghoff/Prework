@@ -10,7 +10,14 @@ import Foundation
 
 class CurrencyField: UITextField {
 	var padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-	var decimal: Decimal { string.decimal / pow(10, Formatter.currency.maximumFractionDigits) }
+	var decimalValue: Decimal = 0
+	var decimal: Decimal {
+		get { string.decimal / pow(10, Formatter.currency.maximumFractionDigits) }
+		set {
+		    decimalValue = newValue
+		    sendActions(for: .editingChanged)
+	    }
+	}
 	var maximum: Decimal = 999_999_999.99
 	private var lastValue: String?
 	var locale: Locale = .current {
@@ -74,7 +81,6 @@ extension CurrencyField {
 extension UITextField {
 	var string: String { text ?? "" }
 	
-	
 }
 
 extension NumberFormatter {
@@ -113,13 +119,15 @@ extension LosslessStringConvertible {
 
 extension UITextField {
 	@IBInspectable var splitAccessory: Bool {
-		get {
-			return self.splitAccessory
-		} set (hasSplit) {
+		get { return self.splitAccessory }
+		set (hasSplit) {
 			if hasSplit {
 				addSplitButtonOnKeyboard()
+				
 			}
+			
 		}
+		
 	}
 	
 	func addSplitButtonOnKeyboard() {
@@ -134,9 +142,12 @@ extension UITextField {
 		splitToolbar.sizeToFit()
 		
 		self.inputAccessoryView = splitToolbar
+		
 	}
 	
 	@objc func splitButtonAction() {
 		self.resignFirstResponder()
+		
 	}
+	
 }

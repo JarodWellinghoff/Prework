@@ -25,11 +25,13 @@ extension Locale {
 					formatter.locale = Locale(identifier: localeID as String)
 					formatter.numberStyle = .currency
 					let form = formatter.string(from: 10)!
-					var whole: Bool = true
+					var whole: Bool
 					if form.contains(group!) {
 						whole = false
+						
 					} else {
 						whole = true
+						
 					}
 					print("\t{")
 					print("\t\t\"identifier\" : \"\(ident!)\",")
@@ -45,5 +47,7 @@ extension Locale {
 			
 		}
 		print("]")
+		
 	}
+	
 }

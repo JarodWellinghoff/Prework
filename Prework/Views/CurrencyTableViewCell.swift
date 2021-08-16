@@ -20,8 +20,8 @@ class CurrencyTableViewCell: UITableViewCell {
 	
 	func setCurrency(_ currency: Currency) {
 		symbolLabel.text = currency.symbol
-		
 		var identText = "\(currency.identifier)"
+		
 		if Locale.current.currencyCode! == currency.code { identText += " (Auto)" }
 		
 		identifierLabel.text = identText

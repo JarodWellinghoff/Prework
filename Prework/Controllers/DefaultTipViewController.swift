@@ -30,22 +30,28 @@ class DefaultTipViewController: UIViewController {
 		
 		if appearance == "Dark" {
 			self.overrideUserInterfaceStyle = .dark
+			
 		} else if appearance == "Light" {
 			self.overrideUserInterfaceStyle = .light
+			
 		} else if appearance == "Device Preference"{
 			self.overrideUserInterfaceStyle = .unspecified
+			
 		}
 		
+		percentageField.becomeFirstResponder()
+		
 	}
-	
 	
 	@IBAction func changeTipPercent(_ sender: UIButton) {
 		let senderTag = sender.tag
 		
 		if senderTag == 0 {
 			percentageField.subtract()
+			
 		} else if senderTag == 1 {
 			percentageField.add()
+			
 		}
 		
 		AudioServicesPlaySystemSound(buttonSound)
@@ -57,5 +63,5 @@ class DefaultTipViewController: UIViewController {
 		self.dismiss(animated: true, completion: nil)
 		
 	}
-
+	
 }

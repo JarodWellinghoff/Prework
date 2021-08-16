@@ -67,7 +67,6 @@ class PercentageField: UITextField {
 		text = (decimal - 0.01).percentage
 		lastValue = text
 		
-		
 	}
 	
 	func add() {
@@ -78,7 +77,6 @@ class PercentageField: UITextField {
 		}
 		text = (decimal + 0.01).percentage
 		lastValue = text
-		
 		
 	}
 	

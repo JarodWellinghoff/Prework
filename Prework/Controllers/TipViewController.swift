@@ -28,19 +28,30 @@ class TipViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		super.viewDidLoad()
 		print("TipView did load...")
 		
+		let openTime = Double(Date().timeIntervalSince1970)
+		let lastOpenedTime = defaults.double(forKey: "lastClosedTime")
+		let secondsUntilReset: Double = 600
+		let timeElapsed = openTime - lastOpenedTime
+		print(timeElapsed)
+		
+		if timeElapsed <= secondsUntilReset {
+			let lastTotal = defaults.string(forKey: "lastTotal")!
+			currencyField.text = lastTotal
+		} else {
+			currencyField.text = "0"
+		}
+		    
 		self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
 		self.navigationController!.navigationBar.shadowImage = UIImage()
 		self.navigationController!.navigationBar.isTranslucent = true
 		
 		self.splitTheBillTableView.delegate = self
 		self.splitTheBillTableView.dataSource = self
-		UserDefaults.resetStandardUserDefaults()
 		
 		percentageField.text = defaults.string(forKey: "tip") ?? "10%"
 		percentageField.add()
 		percentageField.subtract()
 		
-
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -63,12 +74,39 @@ class TipViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		
 		if appearance == "Dark" {
 			self.overrideUserInterfaceStyle = .dark
+			
 		} else if appearance == "Light" {
 			self.overrideUserInterfaceStyle = .light
+			
 		} else if appearance == "Device Preference"{
 			self.overrideUserInterfaceStyle = .unspecified
+			
 		}
 		
+	}
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		partySize.count
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		guard let cell = tableView.dequeueReusableCell(
+				withIdentifier: "PartySizeCell",
+				for: indexPath) as? SplitTheBillTableViewCell
+		else {
+			print("This type of cell is not defined")
+			return UITableViewCell()
+			
+		}
+		
+		cell.setPartySize(indexPath.row + 2, totalCurrencyLabel.decimal)
+		
+		return cell
+		
+	}
+	
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		return 100
 	}
 	
 	@IBAction func calculateTip(_ sender: Any) {
@@ -92,18 +130,25 @@ class TipViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 			
 		}
 		
-		if roundedTotal >= 50 { maxPartySize = 50 }
-		else { maxPartySize = roundedTotal }
+		if roundedTotal >= 50 {
+			maxPartySize = 50
+			
+		}
+		else {
+			maxPartySize = roundedTotal
+			
+		}
 		
 		tipCurrencyLabel.decimal = tip
 		totalCurrencyLabel.decimal = total
 		if maxPartySize > 1 {
 			partySize = Array(stride(from: 2, to: (maxPartySize as NSDecimalNumber).intValue + 1, by: 1))
-			currencyField.splitAccessory = true
-			percentageField.splitAccessory = true
-		} else {
 			
-				
+		}
+		
+		if bill > 0 {
+			defaults.set(bill.currency, forKey: "lastTotal")
+			print(defaults.string(forKey: "lastTotal") ?? "nil")
 		}
 		splitTheBillTableView.reloadData()
 	}
@@ -140,7 +185,7 @@ class TipViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 	
 	
 	@IBAction func editingDidBegin(_ sender: UITextField) {
-
+		
 		if sender.tag == 0 {
 			currencyField.layer.borderWidth = 2.0
 			currencyField.layer.borderColor = UIColor.systemBlue.cgColor
@@ -152,31 +197,6 @@ class TipViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		}
 		
 		splitTheBillTableView.isHidden = true
-	}
-	
-	
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		partySize.count
-	}
-	
-	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		guard let cell = tableView.dequeueReusableCell(
-				withIdentifier: "PartySizeCell",
-				for: indexPath) as? SplitTheBillTableViewCell
-		else {
-			print("This type of cell is not defined")
-			return UITableViewCell()
-			
-		}
-		
-		cell.setPartySize(indexPath.row + 2, totalCurrencyLabel.decimal)
-		
-		return cell
-		
-	}
-	
-	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return 100
 	}
 	
 }

@@ -14,19 +14,20 @@ class SplitTheBillTableViewCell: UITableViewCell {
 	
 	let defaults = UserDefaults.standard
 	
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		
+	}
+	
 	func setPartySize(_ size: Int, _ total: Decimal) {
-		partySizeLabel.text = "\(size)"
 		var image: UIImage?
 		var partyTotal: Decimal = 0
 		var partyTotalTemp = total / Decimal(size)
+		let isWhole = defaults.string(forKey: "defaultIsWhole") ?? "true"
 		
-		if total.isWholeCurrency {
+		if isWhole == "true" {
 			NSDecimalRound(&partyTotal, &partyTotalTemp, 0, .up)
+			
 		} else {
 			NSDecimalRound(&partyTotal, &partyTotalTemp, 2, .up)
 			
@@ -34,15 +35,16 @@ class SplitTheBillTableViewCell: UITableViewCell {
 		
 		if size == 2 {
 			image = UIImage(systemName: "person.2.fill")
+			
 		} else {
 			image = UIImage(systemName: "person.3.fill")
+			
 		}
 		
+		partySizeLabel.text = "\(size)"
 		partySizeImageView.image = image
 		partySizeCurrencyLabel.decimal = partyTotal
 		
-
-        // Configure the view for the selected state
-    }
-
+	}
+	
 }

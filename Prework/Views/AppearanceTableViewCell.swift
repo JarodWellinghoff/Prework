@@ -12,17 +12,17 @@ class AppearanceTableViewCell: UITableViewCell {
 	
 	override func awakeFromNib() {
 		super.awakeFromNib()
-		// Initialization code
+		
 	}
 	
 	override func setSelected(_ selected: Bool, animated: Bool) {
 		super.setSelected(selected, animated: animated)
 		
-		// Configure the view for the selected state
-	}
-	func setAppearance(_ appearance: String) {
-		appearanceLabel.text = appearance
 	}
 	
+	func setAppearance(_ appearance: String) {
+		appearanceLabel.text = appearance
+		
+	}
 	
 }

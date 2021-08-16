@@ -53,7 +53,7 @@ class SettingsTableViewController: UITableViewController {
 		]
 		settingsTableView.reloadData()
 		
-
+		
 		
 	}
 	
@@ -90,7 +90,7 @@ class SettingsTableViewController: UITableViewController {
 		
 		cell.settingLabel.text = settingsDataArray[row].settingsText
 		cell.defaultLabel.text = settingsDataArray[row].defaultText
-				
+		
 		return cell
 		
 	}
@@ -109,5 +109,5 @@ class SettingsTableViewController: UITableViewController {
 		}
 		
 	}
-
+	
 }

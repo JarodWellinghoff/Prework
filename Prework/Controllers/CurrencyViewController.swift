@@ -10,7 +10,6 @@ import UIKit
 class CurrencyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	@IBOutlet weak var currencyTableView: UITableView!
 	
-	var sortedCurrencies: [Currency] = []
 	private lazy var currencies: [Currency] = {
 		guard
 			let fileURL = Bundle.main.url(forResource: "currency", withExtension: "json"),
@@ -18,12 +17,15 @@ class CurrencyViewController: UIViewController, UITableViewDelegate, UITableView
 		else {
 			print("Failed to read currency file")
 			return []
+			
 		}
 		
 		return (try? JSONDecoder().decode([Currency].self, from: data)) ?? []
-	}()
+		
+	} ()
 	
 	let defaults = UserDefaults.standard
+	var sortedCurrencies: [Currency] = []
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -115,7 +117,7 @@ class CurrencyViewController: UIViewController, UITableViewDelegate, UITableView
 		
 		self.dismiss(animated: true, completion: nil)
 		
-	}	
+	}
 	func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
 		let cell = tableView.cellForRow(at: indexPath)
 		cell?.accessoryType = .none

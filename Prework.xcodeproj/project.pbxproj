@@ -18,7 +18,6 @@
 		374C6C1526C568EE006C6B13 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C6C1426C568EE006C6B13 /* CurrencyTableViewCell.swift */; };
 		374C6C1926C57229006C6B13 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C6C1826C57229006C6B13 /* SettingsTableViewCell.swift */; };
 		374C6C2726C73E73006C6B13 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C6C2626C73E72006C6B13 /* Locale.swift */; };
-		374C6C2926C8D408006C6B13 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C6C2826C8D408006C6B13 /* SegueHandler.swift */; };
 		374C6C2B26C8DD03006C6B13 /* DefaultTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C6C2A26C8DD03006C6B13 /* DefaultTipViewController.swift */; };
 		374C6C2D26C9CBDA006C6B13 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C6C2C26C9CBDA006C6B13 /* CurrencyViewController.swift */; };
 		374C6C2F26C9DD06006C6B13 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C6C2E26C9DD06006C6B13 /* AppearanceViewController.swift */; };
@@ -44,7 +43,6 @@
 		374C6C1426C568EE006C6B13 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		374C6C1826C57229006C6B13 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		374C6C2626C73E72006C6B13 /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
-		374C6C2826C8D408006C6B13 /* SegueHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 		374C6C2A26C8DD03006C6B13 /* DefaultTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTipViewController.swift; sourceTree = "<group>"; };
 		374C6C2C26C9CBDA006C6B13 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		374C6C2E26C9DD06006C6B13 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				374C6C0C26C53368006C6B13 /* Currency.swift */,
-				374C6C2826C8D408006C6B13 /* SegueHandler.swift */,
 				374C6C2626C73E72006C6B13 /* Locale.swift */,
 			);
 			path = Models;
@@ -243,7 +240,6 @@
 				374C6C1126C55FB9006C6B13 /* SettingsTableViewController.swift in Sources */,
 				374C6C3126C9E065006C6B13 /* AppearanceTableViewCell.swift in Sources */,
 				3754068F26C48FE5001940BA /* TipViewController.swift in Sources */,
-				374C6C2926C8D408006C6B13 /* SegueHandler.swift in Sources */,
 				374C6C2726C73E73006C6B13 /* Locale.swift in Sources */,
 				37302F9F26BE859B00411062 /* CurrencyField.swift in Sources */,
 				37302FA126BE8CC900411062 /* CurrencyLabel.swift in Sources */,
