@@ -22,6 +22,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+- [x] Custon launch screen
+- [x} Custom app icon]
 - [x] Ability to split the bill with up to 50 people
 - [x] Dark and light mode
 - [x] Settings page
