@@ -42,6 +42,8 @@ GIF created with [EZGif](https://ezgif.com/)
 ## Notes
 
 Describe any challenges encountered while building the app.
+- Learning the Swift language with almost no prior experience.
+- Learning the benifets of class based programming after mostly doing function based
 
 ## License
 
