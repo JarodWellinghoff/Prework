@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Custon launch screen
-- [x} Custom app icon]
+- [x] Custom app icon]
 - [x] Ability to split the bill with up to 50 people
 - [x] Dark and light mode
 - [x] Settings page
@@ -35,13 +35,15 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/18653460/130008598-1f569839-9866-4ae5-8d4d-88fc79a5504b.gif)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [EZGif](https://ezgif.com/)
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- Learning the Swift language with almost no prior experience.
+- Learning the benifets of class based programming after mostly doing function based
 
 ## License
 
