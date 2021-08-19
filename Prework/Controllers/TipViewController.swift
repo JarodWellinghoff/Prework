@@ -146,7 +146,7 @@ class TipViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 			
 		}
 		
-		if bill > 0 {
+		if bill >= 0 {
 			defaults.set(bill.currency, forKey: "lastTotal")
 			print(defaults.string(forKey: "lastTotal") ?? "nil")
 		}

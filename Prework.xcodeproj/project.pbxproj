@@ -48,7 +48,7 @@
 		374C6C2E26C9DD06006C6B13 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
 		374C6C3026C9E065006C6B13 /* AppearanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceTableViewCell.swift; sourceTree = "<group>"; };
 		3754068E26C48FE5001940BA /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
-		37ABAD5826B8915E00C9898E /* Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABAD5826B8915E00C9898E /* Tip%.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip%.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ABAD5B26B8915E00C9898E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37ABAD5D26B8915E00C9898E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		37ABAD6226B8915E00C9898E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		37ABAD5926B8915E00C9898E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37ABAD5826B8915E00C9898E /* Prework.app */,
+				37ABAD5826B8915E00C9898E /* Tip%.app */,
 			);
 			name = Products;
 			path = Prework;
@@ -181,7 +181,7 @@
 			);
 			name = Prework;
 			productName = Prework;
-			productReference = 37ABAD5826B8915E00C9898E /* Prework.app */;
+			productReference = 37ABAD5826B8915E00C9898E /* Tip%.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -408,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jarodwellinghoff.Prework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip%";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,7 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jarodwellinghoff.Prework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip%";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
